@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../home_screen.dart';
- PageView itempageview({required pagecontrollar ,required modle}) {
+PageView itempageview({required pagecontrollar ,required modle}) {
     return PageView.builder(
+                physics: BouncingScrollPhysics(),
                 controller: pagecontrollar,
                 reverse: true,
                 itemBuilder: (context, index) =>
